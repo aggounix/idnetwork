@@ -192,6 +192,26 @@ img {
     }
 }
 
+.no_mobile {
+    display: none;
+}
+
+@media (min-width : 500px) {
+    .no_mobile {
+        display: block;
+    }
+}
+
+.no_desktop {
+    visibility: visible;
+}
+
+@media (min-width:500px) {
+    .no_desktop{
+        visibility: hidden;
+    }
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -244,7 +264,8 @@ img {
     /* width: 500px; */
     margin: 0 auto;
     text-align: center;
-    width: fit-content;   /* Le fond s'adapte au texte uniquement */
+    width: fit-content;
+    /* Le fond s'adapte au texte uniquement */
 }
 
 .hero-title {
@@ -351,7 +372,8 @@ img {
 
 .section-usp {
     padding: 5rem 0;
-    background: #0f172a;;
+    background: #0f172a;
+    ;
 }
 
 .section-features {
@@ -536,31 +558,37 @@ img {
 /* --- NOUVELLES COULEURS (À AJOUTER) --- */
 
 /* Vert (Admin/Goodies) */
-.usp-badge-green, .usp-icon-green {
+.usp-badge-green,
+.usp-icon-green {
     background: linear-gradient(to right, #10b981, #059669);
 }
 
 /* Jaune (Data/Analytics) */
-.usp-badge-yellow, .usp-icon-yellow {
+.usp-badge-yellow,
+.usp-icon-yellow {
     background: linear-gradient(to right, #f59e0b, #d97706);
 }
 
 /* Rose (Comm/Alertes) */
-.usp-badge-pink, .usp-icon-pink {
+.usp-badge-pink,
+.usp-icon-pink {
     background: linear-gradient(to right, #f472b6, #db2777);
 }
 
 /* --- RAPPEL DES COULEURS EXISTANTES (VÉRIFIE TES NOMS) --- */
 
-.usp-badge-blue, .usp-icon-blue {
+.usp-badge-blue,
+.usp-icon-blue {
     background: linear-gradient(to right, #3b82f6, #06b6d4);
 }
 
-.usp-badge-purple, .usp-icon-purple {
+.usp-badge-purple,
+.usp-icon-purple {
     background: linear-gradient(to right, #9333ea, #ec4899);
 }
 
-.usp-badge-orange, .usp-icon-orange {
+.usp-badge-orange,
+.usp-icon-orange {
     background: linear-gradient(to right, #f97316, #dc2626);
 }
 
@@ -1419,16 +1447,20 @@ img {
 
 /* Cache les fonctionnalités supplémentaires */
 .features-extra {
-    display: none; /* On passera en grid via JS */
-    grid-column: 1 / -1; /* Pour que ça s'insère bien dans ta grid existante */
+    display: none;
+    /* On passera en grid via JS */
+    grid-column: 1 / -1;
+    /* Pour que ça s'insère bien dans ta grid existante */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 
 .expand-container {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     margin-top: 3rem;
+    font-size: 3vw;
+    margin-left: 15vw;
 }
 
 .btn-expand {
