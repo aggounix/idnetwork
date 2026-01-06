@@ -1340,14 +1340,15 @@ img {
 }
 
 /* Footer */
-.footer {
+.foooter {
     position: relative;
     margin-top: 5rem;
-    padding-top: 2rem;
+    padding: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(27, 27, 27);
 }
 
-.footer-content {
+.foooter-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1358,12 +1359,12 @@ img {
 }
 
 @media (min-width: 768px) {
-    .footer-content {
+    .foooter-content {
         flex-direction: row;
     }
 }
 
-.footer-logo {
+.foooter-logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -1382,7 +1383,7 @@ img {
     font-size: 0.875rem;
 }
 
-.footer-logo span {
+.foooter-logo span {
     font-weight: 600;
     color: white;
 }
